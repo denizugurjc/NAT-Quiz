@@ -11,6 +11,7 @@ export const Quiz = ({questions}) => {
     const [showScore, setShowScore] = useState(false);
     const [wrongAnswers, setWrongAnswers] = useState([]);
     const [correctAnswers, setCorrectAnswers] = useState([]);
+    const [timer, setTimer] = useState(0);
 
     const handleAnswerButtonClick = (selectedAnswer) => {
         if(selectedAnswer === questions[currentQuestion].answer){
@@ -35,10 +36,11 @@ export const Quiz = ({questions}) => {
   return (
     <div className='question-section'>
         {showScore ? (
-          <ScoreSection />
+          <ScoreSection time={timer} wrongAnswers={wrongAnswers} correctAnswers={correctAnswers}/>
         ) : (
         <>
-          <TopBar text={`Frage ${currentQuestion + 1} von ${questions.length}`} />
+          <TopBar onTimeChange={(timer) => setTimer(timer)}
+          text={`Frage ${currentQuestion + 1} von ${questions.length}`} />
           <Question text={questions[currentQuestion].question} img={questions[currentQuestion].bild} />
           <ButtonSection
             answers={questions[currentQuestion].options}

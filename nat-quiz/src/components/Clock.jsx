@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const Clock = () => {
+export const Clock = ({onTimeChange}) => {
 
   const [timer, setTimer] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -9,11 +9,16 @@ export const Clock = () => {
     let interval;
     if (!showScore) {
       interval = setInterval(() => {
-        setTimer((prevTimer) => prevTimer + 1);
+        setTimer((prevTimer) => prevTimer + 1); 
+       
       }, 1000);
     }
     return () => clearInterval(interval);
   }, [showScore]);
+
+  useEffect(() => {
+    onTimeChange(timer);
+  }, [timer])
 
     return (
         <span className="time-num">
