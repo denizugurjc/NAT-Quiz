@@ -1,4 +1,4 @@
-.quiz-app {
+/* .quiz-app {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
     margin-top: 1400px;
   
   }
-  /*  */
+  /*  
   .score-section {
     text-align: center;
   }
@@ -99,10 +99,7 @@
     background-color: #ff3c4e;
   } 
   
-  .image {
-    max-width: 70px;
-    margin-left: 10px;
-  }
+
   
   .image:last-child {
     margin-left: 0;
@@ -146,4 +143,4 @@
     height: 60px;
   }
   
-  
+   */

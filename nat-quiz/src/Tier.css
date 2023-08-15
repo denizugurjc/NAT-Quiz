@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Delicious+Handrawn&family=Rock+Salt&family=Shadows+Into+Light&family=Work+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Delicious+Handrawn&family=Rock+Salt&family=Shadows+Into+Light&family=Work+Sans&display=swap');
 
 .quiz-app {
   position: relative;
@@ -154,7 +154,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* Responsive Design */
+
 
 @media screen and (max-width: 600px) {
   .btn {
@@ -171,4 +171,4 @@
   .question-count{
     width: 100%;
   }
-}
+} */

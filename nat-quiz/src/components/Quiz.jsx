@@ -32,11 +32,38 @@ export const Quiz = ({questions}) => {
           setShowScore(true);
         }
     };
-    
+
+// result = {
+//    question: {
+//       question: "myQuestion",
+//       bild: "url",
+//       options: ["hello", "bye"],
+//       answer: "hello",
+//    },
+//    yourAnswer: "hey"
+// }
+
   return (
     <div className='question-section'>
         {showScore ? (
-          <ScoreSection time={timer} wrongAnswers={wrongAnswers} correctAnswers={correctAnswers}/>
+          <ScoreSection results={[{
+            question: {
+               question: "myQuestion",
+               bild: "url",
+               options: ["hello", "bye"],
+               answer: "hello",
+            },
+            yourAnswer: "hey"
+         }, 
+         {
+          question: {
+             question: "myQuestion",
+             bild: "url",
+             options: ["hello", "bye"],
+             answer: "hello",
+          },
+          yourAnswer: "hello"
+       }]} time={timer}/>
         ) : (
         <>
           <TopBar onTimeChange={(timer) => setTimer(timer)}
