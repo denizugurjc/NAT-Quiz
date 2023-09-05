@@ -1,12 +1,6 @@
 import React from "react";
 import { QuizSectionItem } from "./QuizSectionItem";
 import "../App.css"
-import Flaggen from "../Flaggen"
-import Allgemein from "../Allgemein";
-import Tier from "../Tier";
-import ReactDOM from "react-dom"
-
-
 
 export const QuizSection = () => {
 

@@ -1,35 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Delicious+Handrawn&family=Montserrat+Alternates:wght@700&family=Rock+Salt&family=Shadows+Into+Light&family=Work+Sans&display=swap');
 
-body {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 24px;
-  background-image: url("https://cdn.pixabay.com/photo/2022/03/15/08/23/school-supplies-7069763_1280.jpg");
-}
-
-.efe{
-  color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  margin-top: 90px;
-  margin-right: 20px;
-  font-size: 19px;
-}
-
 h1{
   color: white;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
   font-size: 44px;
-}
+  margin-bottom: 25px;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 55px;
 }
 
 .quiz-item {

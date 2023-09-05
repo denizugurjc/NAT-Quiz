@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import "./flagge.css";
-import Confetti from "react-confetti";
+// import Confetti from "react-confetti";
 import ExitToAppTwoToneIcon from "@mui/icons-material/ExitToAppTwoTone";
 import soundFile from "./success-fanfare-trumpets-6185.mp3";
 
@@ -199,7 +199,7 @@ const Flaggen = () => {
 
   return (
     <>
-      {showConfetti && <Confetti />}
+      {/* {showConfetti && <Confetti />} */}
       <button className="exit-button" onClick={back}>
         <ExitToAppTwoToneIcon />
       </button>

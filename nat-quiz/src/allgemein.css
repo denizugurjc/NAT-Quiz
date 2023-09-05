@@ -11,8 +11,28 @@
   color: #333;
 }
 
-h1{
-  margin-bottom: 25px;
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 24px;
+  background-image: url("https://cdn.pixabay.com/photo/2022/03/15/08/23/school-supplies-7069763_1280.jpg");
+}
+
+.efe{
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-right: 20px;
+  font-size: 19px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 55px;
 }
 
 .score-count{
@@ -27,6 +47,27 @@ h1{
   background-color: #cc0000;
 }
 
+.question-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.question-count {
+  color: #fff;
+  background-color: #5264c5;
+  padding: 8px 12px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  border-radius: 15px;
+  height: 45px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; /* Hier wird das Element horizontal zentriert. */
+}
+
 .score-item-section {
   color: #fff;
   background-color: #5264c5;
@@ -34,28 +75,12 @@ h1{
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 40%;
+  width: 600px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-size: 18px;
   transition: box-shadow 0.3s ease;
   border-radius: 15px;
   height: 70px;
-  margin-bottom: 10px;
-}
-
-.question-count {
-  color: #fff;
-  background-color: #5264c5;
-  padding: 8px 12px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 40%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-size: 18px;
-  transition: box-shadow 0.3s ease;
-  border-radius: 15px;
-  height: 85px;
   margin-bottom: 10px;
 }
 
@@ -75,7 +100,6 @@ h1{
   align-items: center;
   margin-bottom: 20px;
   margin-top: 20px;
-
 }
 
 .btn {
@@ -85,7 +109,7 @@ h1{
   height: 50px;
   padding: 0 20px;
   margin: 10px;
-  width: calc(50% - 20px);
+  width: 300px;
   background-color: #5264c5;
   border: none;
   border-radius: 4px;
@@ -98,7 +122,7 @@ h1{
 .time-num {
   color: white;
   display: flex;
-  align-items: center;
+  align-items: right;
 }
 
 .time-image {
@@ -179,7 +203,7 @@ h1{
 }
 /* Responsive Design */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .btn {
     width: 100%;
   }
@@ -189,4 +213,4 @@ h1{
   .time-image {
     margin-bottom: 0;
   }
-}
+} */
